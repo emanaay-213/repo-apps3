@@ -13,9 +13,9 @@ import streamlit as st
 
 load_dotenv(find_dotenv())
 #openai.api_key = os.getenv("OPENAI_API_KEY")
-openai.api_key = st.secrets['OPENAI_API_KEY']
+openai.api_key = st.secrets["OPENAI_API_KEY"]
 #HUGGINFACE_HUB_API_TOKEN = os.getenv("HUGGINFACE_HUB_API_TOKEN")
-HUGGINFACE_HUB_API_TOKEN = st.secrets['HUGGINFACE_HUB_API_TOKEN']
+HUGGINFACE_HUB_API_TOKEN = st.secrets["HUGGINFACE_HUB_API_TOKEN"]
 
 llm_model = "gpt-3.5-turbo"  # or gpt4, but gpt3 is cheaper!
 
