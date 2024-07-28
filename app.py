@@ -13,7 +13,7 @@ import streamlit as st
 
 load_dotenv(find_dotenv())
 #openai.api_key = os.getenv("OPENAI_API_KEY")
-openai.api_key = st.secrets["OPENAI_API_KEY"]
+openai.api_key = st.secrets["api_key"]["OPENAI_API_KEY"]
 #HUGGINFACE_HUB_API_TOKEN = os.getenv("HUGGINFACE_HUB_API_TOKEN")
 HUGGINFACE_HUB_API_TOKEN = st.secrets["HUGGINFACE_HUB_API_TOKEN"]
 
