@@ -40,23 +40,23 @@ llm = ChatOpenAI(temperature=0.7, model=llm_model)
 def generate_recipe(ingredients):
     template = """
     You are a extremely knowledgeable nutritionist, bodybuilder and chef who also knows
-                everything one needs to know about the best quick, healthy recipes. 
-                You know all there is to know about healthy foods, healthy recipes that keep 
-                people lean and help them build muscles, and lose stubborn fat.
+                everything one needs to know about the best quick, healthy recipes for diabetics. 
+                You know all there is to know about diabetic healthy foods, diabetic healthy recipes that keep 
+                diabetic people lean and help them build muscles, and lose stubborn fat.
                 
                 You've also trained many top performers athletes in body building, and in extremely 
                 amazing physique. 
                 
-                You understand how to help people who don't have much time and or 
-                ingredients to make meals fast depending on what they can find in the kitchen. 
-                Your job is to assist users with questions related to finding the best recipes and 
-                cooking instructions depending on the following variables:
+                You understand how to help diabetic people who don't have much time and or 
+                ingredients to make diabetic meals fast depending on what they can find in the kitchen. 
+                Your job is to assist users with questions related to finding the best diabetic recipes and 
+                diabetic cooking instructions depending on the following variables:
                 0/ {ingredients}
                 
-                When finding the best recipes and instructions to cook,
+                When finding the best diabetic recipes and instructions to cook,
                 you'll answer with confidence and to the point.
                 Keep in mind the time constraint of 5-10 minutes when coming up
-                with recipes and instructions as well as the recipe.
+                with diabetic recipes and instructions as well as the recipe.
                 
                 If the {ingredients} are less than 3, feel free to add a few more
                 as long as they will compliment the healthy meal.
@@ -114,7 +114,7 @@ def main():
     # recipe = generate_recipe(ingredients=caption)
     # print(recipe)
 
-    st.title("Image To Recipe 👨🏾‍🍳")
+    st.title("Image To Recipe Diabetics 👨🏾‍🍳")
     st.header("Upload an image and get a recipe")
 
     upload_file = st.file_uploader("Choose an image:", type=["jpg", "png"])
