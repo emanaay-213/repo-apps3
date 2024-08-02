@@ -117,7 +117,7 @@ def main():
     st.title("Image To Recipe Diabetics 👨🏾‍🍳")
     st.header("Upload an image and get a recipe")
 
-    upload_file = st.file_uploader("Choose an image:", type=["jpg", "png"])
+    upload_file = st.file_uploader("Choose an image:", type=["jpg", "png", "jpeg"])
 
     if upload_file is not None:
         print(upload_file)
